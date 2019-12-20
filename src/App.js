@@ -21,9 +21,10 @@ function App() {
           </Header>
           <Content>
             <Card>
-         <div>
+         <div className="field-input">
          <Input
           className="global-search"
+          maxLength={50}
           size="large"
           style={{ width: '100%' }}
           placeholder="Enter a to do list item"

@@ -27,11 +27,13 @@ h1.ant-typography{
 }
 
 .check-circle{
+  margin: auto;
+  padding: 5px;
   font-size: 20px;
-  margin-right: 10px;
 }
 
 .list-item{
+  
   color: black;
   font-size: 21px;
   margin-left: 1em;

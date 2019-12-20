@@ -21,7 +21,7 @@ function TodoItem(props) {
         itemLayout="horizontal"
         dataSource={data}
         renderItem={item => (
-          <List.Item className="list-item" actions={[<Icon type="close-circle" theme="filled" className="check-circle" />]}>
+          <List.Item className="list-item" actions={[<Icon type="check-circle" theme="filled" className="check-circle" />, <Icon type="close-circle" theme="filled" className="check-circle" />]}>
             {item.title}
           </List.Item>
         )}

@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  text-align: center;
+  margin: 0;
 }
 
 h1{
@@ -9,9 +9,30 @@ h1{
 }
 
 h1.ant-typography{
+  text-align: center;
   color:white;
+  cursor: pointer;
 }
 
 .global-search {
   width: 100%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.check-circle{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.list-item{
+  color: black;
+  font-size: 21px;
+  margin-left: 1em;
 }

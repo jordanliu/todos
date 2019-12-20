@@ -1,52 +1,29 @@
 import React from 'react';
 import './App.css';
-import { Layout, Typography, Card, Input, Button, Icon } from 'antd';
-import Footer from './Footer';
-import TodoItem from './TodoItem';
-const { Title } = Typography;
-const { Header, Content } = Layout;
-
+import Footer from './components/Footer';
+import TodoItem from './components/TodoItem';
+import TodoInput from './components/TodoInput';
+import {Layout, Typography, Card} from 'antd';
+const {Title} = Typography;
+const {Header, Content} = Layout;
 
 function App() {
-
-  function handleEnter(){
-    console.log("test");
-  }
-
   return (
     <div className="App">
-       <Layout>
-          <Header>
+      <Layout>
+        <Header>
           <Title>todos</Title>
-          </Header>
-          <Content>
-            <Card>
-         <div className="field-input">
-         <Input
-          className="global-search"
-          maxLength={50}
-          size="large"
-          style={{ width: '100%' }}
-          placeholder="Enter a to do list item"
-          onPressEnter={handleEnter}
-          suffix={
-              <Button
-                className="search-btn"
-                style={{ marginRight: -12 }}
-                size="large"
-                type="primary"
-                onClick={handleEnter}
-              >
-                <Icon type="plus" />
-              </Button>
-            }
-          />
-         </div>
-            </Card>
+        </Header>
+        <Content>
 
-            <TodoItem />
-          </Content>
-          <Footer />
+          <Card>
+            <TodoInput />
+          </Card>
+
+          <TodoItem />
+
+        </Content>
+        <Footer />
       </Layout>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
-import {List, Icon, Avatar} from 'antd';
-import './App.css';
+import {List, Icon} from 'antd';
+import '../App.css';
 
 function TodoItem(props) {
   const data = [

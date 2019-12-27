@@ -1,15 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import TodoList from './components/TodoList';
 import TodoInput from './components/TodoInput';
 import {Layout, Typography, Card} from 'antd';
+
 const {Title} = Typography;
 const {Header, Content} = Layout;
 
 function App() {
 
-const [todos, setTodos] = useState([]);
+const  [ todos, setTodos ] = useState([]);
 
   return (
     <div className="App">

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Input, Button, Icon} from 'antd';
+import {Input, Button, Icon, message} from 'antd';
 import '../App.css';
 
 const TodoInput = ({saveTodo}) => {
@@ -7,6 +7,10 @@ const TodoInput = ({saveTodo}) => {
   const onChange = event => setInput(event.target.value);
 
   const onSubmit = event => {
+    input.toString() === ''
+    ? message.error('Enter a to-do item!')
+    : message.success('To-do added!')
+
     event.preventDefault();
     saveTodo(input);
     setInput('')

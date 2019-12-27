@@ -7,7 +7,7 @@
 
 Simple to-do-list with local storage built in React using [Create-React-App](https://github.com/facebook/create-react-app) and [Ant Design](https://github.com/ant-design/ant-design)
 
-<img src="https://user-images.githubusercontent.com/9423525/71533801-d9bf8900-28c8-11ea-8cf3-bf31400f4dfb.png"/>
+<img src="https://user-images.githubusercontent.com/9423525/71534201-24da9b80-28cb-11ea-8441-4cc0bda9b9a2.png"/>
 
 
 ## Installation

@@ -9,7 +9,6 @@ const TodoInput = ({saveTodo}) => {
   const onSubmit = event => {
     input.toString() === ''
     && message.error('Enter a to-do item!')
-
     event.preventDefault();
     saveTodo(input);
     setInput('')

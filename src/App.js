@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import TodoList from './components/TodoList';
@@ -8,9 +8,15 @@ import {Layout, Typography, Card} from 'antd';
 const {Title} = Typography;
 const {Header, Content} = Layout;
 
+
 function App() {
 
-const  [ todos, setTodos ] = useState([]);
+const initalState = () => JSON.parse(localStorage.getItem('todoData')) || [];
+const  [ todos, setTodos ] = useState(initalState);
+
+  React.useEffect(() => {
+    localStorage.setItem("todoData", JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div className="App">

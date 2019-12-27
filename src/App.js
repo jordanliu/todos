@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Footer from './components/Footer';
-import TodoItem from './components/TodoItem';
+import TodoList from './components/TodoList';
 import TodoInput from './components/TodoInput';
 import {Layout, Typography, Card} from 'antd';
 const {Title} = Typography;
 const {Header, Content} = Layout;
 
 function App() {
+
+const [todos, setTodos] = useState([]);
+
   return (
     <div className="App">
       <Layout>
@@ -17,10 +20,16 @@ function App() {
         <Content>
 
           <Card>
-            <TodoInput />
+            <TodoInput saveTodo={(todoText) => {
+              const trimmedText = todoText.trim();
+
+              if(trimmedText.length > 0){
+                setTodos([...todos, trimmedText]);
+              }
+            }}/>
           </Card>
 
-          <TodoItem />
+          <TodoList todos={todos}/>
 
         </Content>
         <Footer />

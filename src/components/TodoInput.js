@@ -1,33 +1,41 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Input, Button, Icon} from 'antd';
 import '../App.css';
 
-function TodoInput(props) {
-  function handleEnter() {
-    console.log('test');
-  }
+const TodoInput = ({saveTodo}) => {
+  const [input, setInput] = useState('');
+  const onChange = event => setInput(event.target.value);
+
+  const onSubmit = event => {
+    event.preventDefault();
+    saveTodo(input);
+    setInput('')
+  };
 
   return (
     <div className="field-input">
+      <form onSubmit={onSubmit}>
       <Input
         className="global-search"
         maxLength={50}
         size="large"
         style={{width: '100%'}}
         placeholder="Enter a to do list item"
-        onPressEnter={handleEnter}
+        value={input}
+        onChange={onChange}
         suffix={
           <Button
             className="search-btn"
             style={{marginRight: -12}}
             size="large"
             type="primary"
-            onClick={handleEnter}
+            onClick={onSubmit}
           >
             <Icon type="plus" />
           </Button>
         }
       />
+      </form>
     </div>
   );
 }

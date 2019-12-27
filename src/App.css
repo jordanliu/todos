@@ -65,9 +65,42 @@ h1.ant-typography{
   text-align: center;
 }
 
-.check-circle{
+.circle{
   margin: auto;
   padding: 5px;
   font-size: 20px;
 }
 
+.closed{
+  transition: width 2s;
+}
+
+.closed:hover{
+  color: rgba(255, 0, 0, 0.582);
+
+}
+
+.closed:active{
+  color: rgba(255, 0, 0, 0.582);
+}
+
+.check{
+  transition: width 2s;
+}
+
+.check:hover{
+  color: green;
+}
+
+.check:active{
+  color: green;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

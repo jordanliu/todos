@@ -17,7 +17,7 @@ const TodoInput = ({saveTodo}) => {
       <form onSubmit={onSubmit}>
       <Input
         className="global-search"
-        maxLength={50}
+        maxLength={36}
         size="large"
         style={{width: '100%'}}
         placeholder="Enter a to do list item"

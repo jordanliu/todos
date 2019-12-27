@@ -29,7 +29,13 @@ const [todos, setTodos] = useState([]);
             }}/>
           </Card>
 
-          <TodoList todos={todos}/>
+          <TodoList 
+          todos={todos}
+          deleteTodo={(todoIndex) => {
+          const newTodos = todos.filter((_, index) => index !== todoIndex);
+
+          setTodos(newTodos);
+          }}/>
 
         </Content>
         <Footer />

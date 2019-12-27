@@ -4,12 +4,36 @@
   .field-input{
     min-width: 100%;
   }
+
+  .list-item{
+    margin-left: 5px;
+    min-width: 100%;
+    font-size: 10px;
+  }
+
+  .todo-wrapper{
+    min-width: 100%;
+  }
 }
 
 
 .App {
   margin: 0;
 }
+
+
+.todo-wrapper{
+  overflow: visible;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.list-item{
+  color: black;
+  font-size: 21px;
+}
+
 
 .field-input{
   overflow: hidden;
@@ -47,9 +71,3 @@ h1.ant-typography{
   font-size: 20px;
 }
 
-.list-item{
-  
-  color: black;
-  font-size: 21px;
-  margin-left: 1em;
-}

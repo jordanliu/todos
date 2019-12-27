@@ -16,7 +16,7 @@ function TodoItem(props) {
   ];
 
   return (
-    <div>
+    <div className="todo-wrapper">
       <List 
         itemLayout="horizontal"
         dataSource={data}

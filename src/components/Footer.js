@@ -7,7 +7,7 @@ function Footer(props) {
   return (
     <div className="footer">
       <a
-        href="https://github.com/jordanliu/palindrome-checker"
+        href="https://github.com/jordanliu/todos"
         rel="noopener noreferrer"
         target="_blank"
       >

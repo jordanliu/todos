@@ -34,6 +34,12 @@
   font-size: 21px;
 }
 
+/* .list-item:hover{
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(216, 218, 221, 0.322);
+} */
+
 
 .field-input{
   overflow: hidden;

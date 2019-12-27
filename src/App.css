@@ -95,11 +95,11 @@ h1.ant-typography{
 }
 
 .check:hover{
-  color: green;
+  color: #52c41a;
 }
 
 .check:active{
-  color: green;
+  color: #48ac16;
 }
 
 @keyframes fadeIn {
